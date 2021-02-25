@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+body::before,
+body::after {
+    position: fixed;
+    display: block;
+    z-index: -1;
+}
+
+body::before {
+    content: url(../images/bg-pattern-top.svg);
+    top: -60%;
+    left: -12%;
+}
+
+body::after {
+    content: url(../images/bg-pattern-bottom.svg);
+    bottom: -65%;
+    right: -12%;
+}
+
+/* CARD */
+.profile-card {
+    width: 100%;
+    width: 350px;
+    height: 375px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 50px 100px rgba(8, 70, 94, .51);
+    overflow: hidden;
+}
+
+/* CARD HEADER */
+.profile-card__header {
+    background-image: url(../images/bg-pattern-card.svg);
+    height: 144px;
+    position: relative;
+}
+
+.profile-card__image {
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+/* CARD BODY */
+.profile-card__body {
+    text-align: center;
+    height: 40%;
+    padding-top: 75px;
+}
+
+.profile-card__text {
+    line-height: 1.8;
+}
+
+.profile-card__age {
+    margin-left: 6px;
+}
+
+/* CARD FOOTER */
+.profile-card__footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgba(191, 191, 191, 0.5);
+    padding-top: 7%;
+}
+
+.profile-card__stats {
+    text-align: center;
+} 
+
+.profile-card__numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOOTER */
+.attribution { 
+    position: absolute;
+    font-size: 11px;
+    bottom: 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} 
+
+/* BEM */
+.text--light {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.text--bold {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.text--small {
+    font-size: 14px;
+}
+
+.text--smaller {
+    font-size: 12px;
+}
